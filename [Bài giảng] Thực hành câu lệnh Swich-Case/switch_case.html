@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let opera = "+";
+      let a = +prompt("Nhập số a: "); // khởi tạo số a từ bàn phím
+      let b = +prompt("Nhập số b: "); // khởi tạo số b từ bàn phím
+
+      switch (opera) {
+        case "+":
+          document.write("a+b= " + (a + b));
+          break;
+        case "-":
+          document.write("a-b" + (a - b));
+          break;
+        case "*":
+          document.write("a*b= " + a * b);
+          break;
+        case "/":
+          if (b != 0) {
+            document.write("a/b= " + a / b);
+          } else {
+            document.write("Cannot divide by zero");
+          }
+          defalut: alert("không có phép toán!");
+          break;
+      }
+    </script>
+  </body>
+</html>

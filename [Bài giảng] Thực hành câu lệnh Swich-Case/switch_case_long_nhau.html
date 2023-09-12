@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let a = 100;
+      let b = 200;
+      let opera = "+";
+      let nestedOpera = "-";
+
+      switch (opera) {
+        case "+":
+          switch (nestedOpera) {
+            case "-":
+              document.write("a= " + a + ", b= " + b);
+              break;
+            default:
+              alert("No nested operation!");
+          }
+          break;
+        default:
+          alert("No operation!");
+      }
+    </script>
+  </body>
+</html>
