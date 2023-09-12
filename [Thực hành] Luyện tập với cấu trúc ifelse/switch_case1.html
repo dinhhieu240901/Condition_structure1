@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Luyện tập với cấu trúc lặp switch case</title>
+  </head>
+  <body>
+    <script>
+      // Cấu trúc if else if
+    //   let browser = prompt("Enter browser name!");
+    //   if (browser == "Edge") {
+    //     alert("You've got the Edge!");
+    //   } else if (
+    //     browser == "Chrome" ||
+    //     browser == "Firefox" ||
+    //     browser == "Safari" ||
+    //     browser == "Opera"
+    //   ) {
+    //     alert("Okay we support these browsers too");
+    //   } else {
+    //     alert("We hope that this page looks ok!");
+    //   }
+      // Cấu trúc switch case
+
+      let browser = prompt("Nhập tên trình duyệt: ");
+      switch (browser) {
+        case "Edge":
+          alert("You've got the Edge!");
+          break;
+        case "Chorme":
+        case "Firefox":
+        case "Safari":
+        case "Opera":
+          alert("Okay we support these browsers too");
+          break;
+          defalut: alert("We hope that this page looks ok!");
+      }
+    </script>
+  </body>
+</html>
